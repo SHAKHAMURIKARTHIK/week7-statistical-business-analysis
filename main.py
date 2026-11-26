@@ -1,8 +1,3 @@
-"""
-Week 7: Introduction to Statistics for Data Science
-Project: Statistical Business Analysis
-Run: python main.py
-"""
 from pathlib import Path
 import warnings
 import pandas as pd
