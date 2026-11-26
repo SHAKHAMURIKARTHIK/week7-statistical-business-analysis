@@ -1,0 +1,37 @@
+WEEK 7: STATISTICAL BUSINESS ANALYSIS
+Significance level: alpha = 0.05
+
+SALES DATA
+Records: 100
+Total sales: 12,365,048.00
+Mean transaction sales: 123,650.48
+Median transaction sales: 97,955.50
+Mode transaction sales: 6,540.00
+Sample standard deviation: 100,161.09
+95% confidence interval for mean sales: [103,776.35, 143,524.61]
+Margin of error: 19,874.13
+Shapiro-Wilk normality test: statistic=0.8989, p=0.000001
+
+CORRELATION
+Pearson r (Quantity, Total_Sales): 0.6881, p=0.000000
+Pearson r (Price, Total_Sales): 0.6461, p=0.000000
+
+HYPOTHESIS TESTS (alpha=0.05)
+                             Test  Statistic      P_Value          Decision
+  Sales by region (one-way ANOVA)   2.164363 9.723678e-02 Fail to reject H0
+ Sales by product (one-way ANOVA)   2.050791 9.342820e-02 Fail to reject H0
+East vs West sales (Welch t-test)   2.062314 4.547888e-02         Reject H0
+   Contract vs churn (chi-square)  27.715301 9.587354e-07         Reject H0
+
+CUSTOMER CHURN
+Observed churn rate: 10.6%
+95% Wilson CI: [0.0820, 0.1361]
+Welch tenure t-test (churned vs retained): t=-34.5349, p=8.98233e-130
+
+REGRESSION
+R-squared: 1.000000
+RMSE: 0.000000
+Caution: Total_Sales is constructed as Quantity * Price. This regression is a mathematical reconstruction, not an independent forecasting model.
+
+DATA LIMITATION
+The supplied sales data has no Marketing_Spend column. Therefore marketing-spend-versus-revenue correlation or hypothesis testing cannot be conducted from these files. The churn dataset is analyzed separately; customer IDs in the two datasets are not verified as matching identities.

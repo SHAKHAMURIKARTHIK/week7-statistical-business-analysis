@@ -1,0 +1,5 @@
+Test,Statistic,P_Value,Decision
+Sales by region (one-way ANOVA),2.164363429897842,0.09723678084979993,Fail to reject H0
+Sales by product (one-way ANOVA),2.050791009479213,0.09342819607538902,Fail to reject H0
+East vs West sales (Welch t-test),2.0623139687676573,0.045478882283485886,Reject H0
+Contract vs churn (chi-square),27.715301368568205,9.58735427092388e-07,Reject H0
